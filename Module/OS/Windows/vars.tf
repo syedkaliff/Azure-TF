@@ -14,4 +14,5 @@ variable "vmdisks" {  }
  variable "tags" { }
 # variable "nsgid" {}
  #variable "nicid" {}
+ variable "pip" {}
  

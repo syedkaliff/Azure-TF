@@ -73,3 +73,11 @@ resource "azurerm_virtual_machine_data_disk_attachment" "example" {
   caching            = "ReadWrite"
 }
 
+
+  resource "azurerm_public_ip" "PIP" {
+    count = var.pip ==true ?1:0
+    name                = upper("${var.hostname}-PublicIP")
+    location            = azurerm_resource_group.example.location
+    resource_group_name = azurerm_resource_group.example.name
+    allocation_method   = "Static"
+  }

@@ -105,7 +105,7 @@ module "vm" {
   password = "Pa55w0rd123!!!"
   vmdisks = ["8","4"]
   location = "eastus"
-  
+ pip = false
   
   tags = local.tags
 }

@@ -20,7 +20,7 @@ resource "azurerm_network_security_rule" "allow-in" {
 
 
 resource "azurerm_network_security_group" "nsg" {
-  count = !var.vm-nsg ? 0:1
+ # count = !var.vm-nsg ? 0:1
   name                = var.nsg_name
   #resource_group_name = azurerm_resource_group.rg.name
   resource_group_name = var.resource_group_name
