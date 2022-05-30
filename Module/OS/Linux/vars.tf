@@ -10,4 +10,4 @@ variable "username" {}
 variable "password" {}
   
 variable "vmdisks" {  }
- variable "tags" { }
+# variable "tags" { }
