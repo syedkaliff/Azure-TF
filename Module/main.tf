@@ -18,7 +18,7 @@ features {}
 
 
 module "vm" {
-  source = "../module/os/linux"
+  source = "../Module/OS/Linux"
   hostname = "pvlomsads"
   rgname = "pvlomsads"
   size = "standard_B1s"
@@ -36,7 +36,7 @@ module "vnet" {
     #for_each = var.vms
 
    # count = var.subnetnames
-    source = "../module/vnet"
+    source = "../Module/VNET"
     rgname = "test"
     address_space = ["10.0.0.0/8"]
     address_subnets = ["10.0.1.0/24","10.0.2.0/24"]
